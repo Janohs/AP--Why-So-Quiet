@@ -14,6 +14,5 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
-  #To do : make sure if logged in, no need to re login again
-
+  # To do : make sure if logged in, no need to re login again
 end
