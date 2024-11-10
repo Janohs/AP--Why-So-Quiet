@@ -1,2 +1,32 @@
-<h1>Sessions#create</h1>
-<p>Find me in app/views/sessions/create.html.erb</p>
+# app/controllers/sessions_controller.rb
+class SessionsController < ApplicationController
+  require 'supabase'
+
+  SUPABASE_URL = ENV['SUPABASE_URL']
+  SUPABASE_API_KEY = ENV['SUPABASE_API_KEY']
+
+  def new
+    # Render the login form
+  end
+
+  def create
+    email = params[:email]
+    password = params[:password]
+
+    client = Supabase::Client.new(SUPABASE_URL, SUPABASE_API_KEY)
+    response = client.auth.sign_in(email: email, password: password)
+
+    if response['error']
+      flash[:alert] = response['error']['message']
+      render :new
+    else
+      session[:user_id] = response['user']['id']
+      redirect_to dashboard_path, notice: 'Logged in successfully'
+    end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to root_path, notice: 'Logged out successfully'
+  end
+end

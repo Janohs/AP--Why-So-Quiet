@@ -1,47 +1,30 @@
 <!-- app/views/sessions/new.html.erb -->
 <div class="login-page">
-    <div class="container vh-100 d-flex align-items-center justify-content-end">
-        <!-- Right Side Login Form -->
-        <div class="card p-4" style="max-width: 400px; width: 100%; border-radius: 8px;">
-            
-            <!-- Logo Placeholder -->
-            <div class="d-flex justify-content-center mb-4">
-                <div class="logo-placeholder rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                    <span class="text-muted">Logo</span>
-                </div>
-            </div>
-
-            <!-- Header -->
-            <h3 class="text-center mb-4">Log In</h3>
-
-            <!-- Form without Labels -->
-            <%= form_with(url: login_path, local: true) do |f| %>
-                <div class="form-group mb-3">
-                    <%= f.email_field :email, class: "form-control", placeholder: "Enter your email" %>
-                </div>
-                <div class="form-group mb-3">
-                    <%= f.password_field :password, class: "form-control", placeholder: "Enter your password" %>
-                </div>
-                <%= f.submit "Log In", class: "btn btn-primary w-100 mb-3", style: "background-color: #FF8A08; border-color: #FF8A08;" %>
-            <% end %>
-
-            <!-- Divider -->
-            <div class="d-flex align-items-center text-muted mb-3" style="color: #6C7278;">
-                <hr class="flex-grow-1 my-2">
-                <span class="mx-2">or log in with</span>
-                <hr class="flex-grow-1 my-2">
-            </div>
-
-            <!-- Signin with Google -->
-            <button class="btn w-100 mb-4" style="border: 2px solid #FF9015; color: #FF9015;">
-                Sign in with Google
-            </button>
-
-            <!-- Sign Up Prompt -->
-            <div class="text-center">
-                <span class="text-muted">Don’t have an account? </span>
-                <a href="<%= signup_path %>" style="color: #FF921A; font-weight: bold; text-decoration: none;">Sign up</a>
-            </div>
+  <div class="container vh-100 d-flex align-items-center justify-content-end">
+    <!-- Right Side Login Form -->
+    <div class="card p-4" style="max-width: 400px; width: 100%; border-radius: 8px;">
+      <!-- Logo Placeholder -->
+      <div class="d-flex justify-content-center mb-4">
+        <div class="logo-placeholder rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+          <span class="text-muted">Logo</span>
         </div>
+      </div>
+      <!-- Header -->
+      <h3 class="text-center mb-4">Log In</h3>
+      <!-- Login Form -->
+      <%= form_with(url: login_path, local: true) do |f| %>
+        <div class="form-group mb-3">
+          <%= f.email_field :email, class: "form-control", placeholder: "Enter your email", autofocus: true %>
+        </div>
+        <div class="form-group mb-3">
+          <%= f.password_field :password, class: "form-control", placeholder: "Enter your password" %>
+        </div>
+        <!-- Forgot Password Link -->
+        <div class="text-center mb-3">
+        </div>
+        <!-- Submit Button -->
+        <%= f.submit "Log In", class: "btn btn-primary w-100", style: "background-color: #FF8A08; border-color: #FF8A08;" %>
+      <% end %>
     </div>
+  </div>
 </div>
