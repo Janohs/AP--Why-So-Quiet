@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "password_resets/new"
+  get "password_resets/create"
+  get "password_resets/edit"
+  get "password_resets/update"
   # Dashboard route (Landing page for logged-in users)
   get "dashboard", to: "dashboard#index", as: :dashboard
 

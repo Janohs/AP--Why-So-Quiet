@@ -1,0 +1,35 @@
+[33mcommit ec5718874e910658adebb7703a027a00196532dd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mJanot-feature[m[33m, [m[1;31morigin/Janot-feature[m[33m)[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sat Nov 9 14:08:38 2024 +0800
+
+    removed vercel
+
+[33mcommit e23f6aa890663eb11ceb9903dffba994d63ce9e3[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sat Nov 9 13:56:52 2024 +0800
+
+    vercel added
+
+[33mcommit a4edf4affd77d033ead8fb60b273273ba2027485[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Fri Nov 8 23:32:21 2024 +0800
+
+    Added canteen UI - rough but functional
+
+[33mcommit cbb91c05769c66a065447b88b673ddb277d33790[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Fri Nov 8 15:46:20 2024 +0800
+
+    Added Canteen Module
+
+[33mcommit 345ff9d258588bd7fa133b2664a7cfe3f3f4d6aa[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Fri Nov 8 14:09:21 2024 +0800
+
+    Asjustments to files
+
+[33mcommit 2d39c1abe72c3301cd0bd723f1dc7891e9dabd6d[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Mon Nov 4 02:05:45 2024 +0800
+
+    First Commit With Log In and A bit of Dashboard
