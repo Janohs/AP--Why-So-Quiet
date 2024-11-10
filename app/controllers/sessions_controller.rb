@@ -1,18 +1,20 @@
-# app/controllers/sessions_controller.rb
 class SessionsController < ApplicationController
-  def new
-    # Render the login form
-  end
-
   def create
-    # Handle login logic here (authentication)
-    redirect_to dashboard_index_path # Redirect to dashboard after successful login
+    # Find the user by email
+    @user = User.find_by(email: params[:email])
+
+    # Authenticate the user with the provided password
+    if @user&.authenticate(params[:password])
+      session[:user_id] = @user.id
+      redirect_to dashboard_path, notice: "Login successful!"
+    else
+      flash.now[:alert] = "Invalid email or password"
+      render :new
+    end
   end
 
   def destroy
-    # Handle logout logic here
-    redirect_to root_path
+    session[:user_id] = nil
+    redirect_to root_path, notice: "Logged out successfully"
   end
-
-  # To do : make sure if logged in, no need to re login again
 end

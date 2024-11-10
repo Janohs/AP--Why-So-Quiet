@@ -1,0 +1,88 @@
+[33mcommit 74e4a516531726153486b2c5f28da80187c822fc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mJanot-feature[m[33m)[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sun Nov 10 18:38:41 2024 +0800
+
+    Revert "This is the stable version"
+    
+    This reverts commit 74a3b6422fb2f25f38ac991e87546f1968fc68e0.
+
+[33mcommit eb62d3763f890d78f2c19652f7bd648c5e9dab5c[m
+Merge: 74a3b64 aec806b
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sun Nov 10 18:31:50 2024 +0800
+
+    Merge branch 'Janot-feature' of https://github.com/Janohs/AP--Why-So-Quiet into Janot-feature
+
+[33mcommit 74a3b6422fb2f25f38ac991e87546f1968fc68e0[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sun Nov 10 18:25:55 2024 +0800
+
+    This is the stable version
+
+[33mcommit f9e3d08eab15de77201bf4b71cf9a2f4bd5c2e80[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sun Nov 10 18:23:31 2024 +0800
+
+    Revert "Added database connection to Supabase"
+    
+    This reverts commit 065ad28b77fb951b06c4de2f346bd7f1e33ce3a7.
+
+[33mcommit 065ad28b77fb951b06c4de2f346bd7f1e33ce3a7[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sat Nov 9 18:33:19 2024 +0800
+
+    Added database connection to Supabase
+
+[33mcommit 4d92e8474b3e9955dc6c96a0e85bdfad1c3f95ad[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sun Nov 10 17:20:51 2024 +0800
+
+    Fixed laoyout for login and welcome page
+
+[33mcommit aec806bcc861ff24ff67e16aa884531f6be93831[m[33m ([m[1;31morigin/Janot-feature[m[33m)[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sun Nov 10 17:20:51 2024 +0800
+
+    Fixed laoyout for login and welcome page
+
+[33mcommit 9bfede01d13b9ef4053875b42638efd194a18bb0[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sat Nov 9 18:33:19 2024 +0800
+
+    Added database connection to Supabase
+
+[33mcommit ec5718874e910658adebb7703a027a00196532dd[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sat Nov 9 14:08:38 2024 +0800
+
+    removed vercel
+
+[33mcommit e23f6aa890663eb11ceb9903dffba994d63ce9e3[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Sat Nov 9 13:56:52 2024 +0800
+
+    vercel added
+
+[33mcommit a4edf4affd77d033ead8fb60b273273ba2027485[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Fri Nov 8 23:32:21 2024 +0800
+
+    Added canteen UI - rough but functional
+
+[33mcommit cbb91c05769c66a065447b88b673ddb277d33790[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Fri Nov 8 15:46:20 2024 +0800
+
+    Added Canteen Module
+
+[33mcommit 345ff9d258588bd7fa133b2664a7cfe3f3f4d6aa[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Fri Nov 8 14:09:21 2024 +0800
+
+    Asjustments to files
+
+[33mcommit 2d39c1abe72c3301cd0bd723f1dc7891e9dabd6d[m
+Author: Janohs <152973632+Janohs@users.noreply.github.com>
+Date:   Mon Nov 4 02:05:45 2024 +0800
+
+    First Commit With Log In and A bit of Dashboard
