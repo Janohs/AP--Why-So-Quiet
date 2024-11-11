@@ -21,10 +21,16 @@
         </div>
         <!-- Forgot Password Link -->
         <div class="text-center mb-3">
+          <!-- Add any forgot password link here if needed -->
         </div>
         <!-- Submit Button -->
         <%= f.submit "Log In", class: "btn btn-primary w-100", style: "background-color: #FF8A08; border-color: #FF8A08;" %>
       <% end %>
+      <!-- Sign Up Link -->
+      <div class="text-center mt-3">
+        <span class="text-muted">Don’t have an account? </span>
+        <%= link_to "Sign up", signup_path, style: "color: #FF921A; font-weight: bold;" %>
+      </div>
     </div>
   </div>
 </div>
