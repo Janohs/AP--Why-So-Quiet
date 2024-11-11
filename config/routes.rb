@@ -7,16 +7,13 @@ Rails.application.routes.draw do
   get "dashboard", to: "dashboard#index", as: :dashboard
 
   # Login and logout routes
-  get "login", to: "sessions#new", as: :login
-  post "login", to: "sessions#create"
-  delete "logout", to: "sessions#destroy", as: :logout
+  get "login", to: "sessions#new", as: :login          # Route to display the login form
+  post "login", to: "sessions#create"                  # Route to handle login submission
+  delete "logout", to: "sessions#destroy", as: :logout # Route to handle logout
 
   # Sign-up routes
   get "signup", to: "users#new", as: :signup           # Route to display the signup form
   post "signup", to: "users#create"                    # Route to handle signup submission
-
-  # Password reset routes
-  resources :password_resets, only: [ :new, :create, :edit, :update ]
 
   # Root path points to the welcome page (Home page for non-logged-in users)
   root "pages#welcome" # Redirect to welcome page instead of login page
@@ -24,6 +21,8 @@ Rails.application.routes.draw do
   # Redirect dashboard/index to dashboard for cleaner URL
   get "dashboard/index", to: redirect("/dashboard")
 
-  # Canteen path (path to canteen module)
-  get "canteen", to: "canteen#index", as: :canteen
+  # canteen path (in home page to canteen module) aka canteen_path
+  get "canteen_path", to: "canteen#index", as: :canteen
+
+  get "examples", to: "examples#index"
 end
